@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "452023800812",
+    "project_id": "icart-ac07a",
+    "storage_bucket": "icart-ac07a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452023800812:android:d2e8fcf7f3ba466c95a6c9",
+        "android_client_info": {
+          "package_name": "com.sunny.icart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452023800812-vl6oaal73dp4hcg283qan0p9j54inglh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBADeIYqt8nEIoBGndd0Xlz5Ch8ewM_Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452023800812-vl6oaal73dp4hcg283qan0p9j54inglh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452023800812:android:b0a31334caf3b6d895a6c9",
+        "android_client_info": {
+          "package_name": "com.sunny.icartadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452023800812-vl6oaal73dp4hcg283qan0p9j54inglh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBADeIYqt8nEIoBGndd0Xlz5Ch8ewM_Xk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452023800812-vl6oaal73dp4hcg283qan0p9j54inglh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
