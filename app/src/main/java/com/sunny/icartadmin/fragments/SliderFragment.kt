@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.sunny.icartadmin.R
 import com.sunny.icartadmin.databinding.FragmentSliderBinding
@@ -80,11 +82,29 @@ class SliderFragment : Fragment() {
             }
 
             .addOnFailureListener{
-
+                dialog.dismiss()
+                Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT).show()
             }
     }
 
     private fun storeData(image: String) {
+
+        val db = Firebase.firestore
+        val data = hashMapOf<String, Any>(
+            "img" to image
+        )
+
+
+        db.collection("slider").document("item").set(data)
+            .addOnSuccessListener {
+                dialog.dismiss()
+                Toast.makeText(requireContext(), "Uploaded Successfully", Toast.LENGTH_SHORT).show()
+            }
+
+            .addOnFailureListener {
+                dialog.dismiss()
+                Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT).show()
+            }
 
     }
 }
